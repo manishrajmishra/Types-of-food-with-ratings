@@ -57,7 +57,7 @@ export default function App() {
           fontWeight: "bolder"
         }}
       >
-        Declious-foods{" "}
+        Delicious-foods{" "}
       </h1>
       <p
         style={{
