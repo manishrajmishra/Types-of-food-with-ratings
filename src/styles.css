@@ -6,5 +6,6 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #c0c0c0;
+  background-size: cover;
+  background-image: url("https://wallup.net/wp-content/uploads/2017/03/29/490310-Fries-tomatoes-food-748x499.jpg");
 }

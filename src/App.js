@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-const foodDB = {
+const foodDictionary = {
   chinesse: [
     { name: "Hot and Sour Soup", rating: "5/5" },
     { name: "Honey Chilli Potato", rating: "4/5" },
@@ -72,7 +72,7 @@ export default function App() {
       </p>
 
       <div>
-        {Object.keys(foodDB).map((foods) => (
+        {Object.keys(foodDictionary).map((foods) => (
           //styling of button
           <button
             //calling of foodClickHandler function
@@ -81,12 +81,13 @@ export default function App() {
               cursor: "pointer",
               backgroundColor: "yellow",
               borderRadius: "0.5rem",
-              padding: "0.5rem  1rem",
-              border: "2px solid black",
               margin: "1rem 0.3rem",
               fontWeight: "bolder",
               fontSize: "larger",
-              textAlign: "center"
+              textAlign: "center",
+              padding: "0.5rem  1rem",
+              border: "2px solid black"
+              
             }}
           >
             {foods}
@@ -95,18 +96,18 @@ export default function App() {
       </div>
       <div style={{ textAlign: "center" }}>
         <ul style={{ paddingInlineEnd: "22px" }}>
-          {foodDB[selectedFood].map((food, index) => (
+          {foodDictionary[selectedFood].map((food, index) => (
             <li
               key={food.name}
               style={{
                 listStyle: "none",
                 padding: "1rem",
-                border: "2px solid #D1D5DB",
-                width: "80%",
                 margin: "1rem 0rem",
                 borderRadius: "0.5rem",
                 backgroundColor: getBg(index),
-                boxShadow: "gray"
+                boxShadow: "gray",
+                border: "2px solid #D1D5DB",
+                width: "80%"
               }}
             >
               {" "}
