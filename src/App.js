@@ -37,7 +37,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1 style={{ color: "red" }}> 🍔 Declious-foods </h1>
+      <h1 style={{ color: "red" }}>Declious-foods </h1>
       <p style={{ fontSize: "larger", color: "green" }}>
         {" "}
         List of my favourite foods with rating{" "}
