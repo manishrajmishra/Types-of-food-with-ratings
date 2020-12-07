@@ -26,7 +26,7 @@ export default function App() {
   const [selectedFood, setFood] = useState("chinesse");
 
   function getBg(index) {
-    if (index % 2 === 0) {
+    if (index % 2 === 1) {
       return "white";
     }
     return "gray";
@@ -35,6 +35,7 @@ export default function App() {
   function genreClickHandler(foodsitem) {
     setFood(foodsitem);
   }
+
   return (
     <div className="App">
       <h1 style={{ color: "red" }}>Declious-foods </h1>
@@ -54,7 +55,8 @@ export default function App() {
               padding: "0.5rem  1rem",
               border: "2px solid black",
               margin: "1rem 0.3rem",
-              fontWeight: "bolder"
+              fontWeight: "bolder",
+              fontSize: "larger"
             }}
           >
             {foods}
@@ -78,8 +80,10 @@ export default function App() {
               }}
             >
               {" "}
-              <div style={{ fontSize: "larger" }}>Dish Name : {food.name} </div>
-              <div style={{ fontSize: "smaller" }}>
+              <div style={{ fontSize: "larger", fontWeight: "bolder" }}>
+                Dish Name : {food.name}{" "}
+              </div>
+              <div style={{ fontSize: "smaller", fontWeight: "bolder" }}>
                 Dish Raing : {food.rating}{" "}
               </div>
             </li>
