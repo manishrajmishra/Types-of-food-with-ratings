@@ -27,10 +27,10 @@ const foodDB = {
     { name: "Ramen", rating: "3.5/5" }
   ],
   thai: [
-    { name: "Tom Yum Goong (Spicy Shrimp Soup)", rating: "4/5" },
-    { name: "Som Tam (Spicy Green Papaya Salad)", rating: "3.5/5" },
-    { name: "Yam Talay (Spicy Seafood Salad)", rating: "4.5/5" },
-    { name: "Pad Thai (Thai Style Fried Noodles)", rating: "3.5/5" }
+    { name: "Spicy Shrimp Soup", rating: "4/5" },
+    { name: "Spicy Green Papaya Salad", rating: "3.5/5" },
+    { name: "Spicy Seafood Salad", rating: "4.5/5" },
+    { name: "Thai Style Fried Noodles", rating: "3.5/5" }
   ]
 };
 
@@ -79,18 +79,19 @@ export default function App() {
       </div>
       <hr />
       <div style={{ textAlign: "center" }}>
-        <ul style={{ paddingInlineStart: "0" }}>
+        <ul style={{ paddingInlineEnd: "22px" }}>
           {foodDB[selectedFood].map((food, index) => (
             <li
               key={food.name}
               style={{
                 listStyle: "none",
                 padding: "1rem",
-                border: "1px solid #D1D5DB",
+                border: "2px solid #D1D5DB",
                 width: "80%",
                 margin: "1rem 0rem",
                 borderRadius: "0.5rem",
-                backgroundColor: getBg(index)
+                backgroundColor: getBg(index),
+                boxShadow: "gray"
               }}
             >
               {" "}
