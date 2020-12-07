@@ -77,7 +77,6 @@ export default function App() {
           </button>
         ))}
       </div>
-      <hr />
       <div style={{ textAlign: "center" }}>
         <ul style={{ paddingInlineEnd: "22px" }}>
           {foodDB[selectedFood].map((food, index) => (
