@@ -19,6 +19,18 @@ const foodDB = {
     { name: "Tandoori Chicken", rating: "5/5" },
     { name: "Malai Kofta", rating: "5/5" },
     { name: "Chole (Chickpea Curry)", rating: "4/5" }
+  ],
+  japanese: [
+    { name: "Sushi", rating: "4.5/5" },
+    { name: "Tofu", rating: "3.5/5" },
+    { name: "Yakitori", rating: "4/5" },
+    { name: "Ramen", rating: "3.5/5" }
+  ],
+  thai: [
+    { name: "Tom Yum Goong (Spicy Shrimp Soup)", rating: "4/5" },
+    { name: "Som Tam (Spicy Green Papaya Salad)", rating: "3.5/5" },
+    { name: "Yam Talay (Spicy Seafood Salad)", rating: "4.5/5" },
+    { name: "Pad Thai (Thai Style Fried Noodles)", rating: "3.5/5" }
   ]
 };
 
