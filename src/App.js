@@ -36,15 +36,15 @@ const foodDB = {
 
 export default function App() {
   const [selectedFood, setFood] = useState("chinesse");
-
+  //There will be different colour at even and odd position
   function getBg(index) {
     if (index % 2 === 1) {
       return "white";
     }
     return "gray";
   }
-
-  function genreClickHandler(foodsitem) {
+  //click handler for button to select the countries food
+  function foodClickHandler(foodsitem) {
     setFood(foodsitem);
   }
 
@@ -58,8 +58,10 @@ export default function App() {
 
       <div>
         {Object.keys(foodDB).map((foods) => (
+          //styling of button
           <button
-            onClick={() => genreClickHandler(foods)}
+            //calling of foodClickHandler function
+            onClick={() => foodClickHandler(foods)}
             style={{
               cursor: "pointer",
               backgroundColor: "yellow",
