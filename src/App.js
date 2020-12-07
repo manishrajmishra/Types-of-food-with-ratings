@@ -70,7 +70,8 @@ export default function App() {
               border: "2px solid black",
               margin: "1rem 0.3rem",
               fontWeight: "bolder",
-              fontSize: "larger"
+              fontSize: "larger",
+              textAlign: "center"
             }}
           >
             {foods}
