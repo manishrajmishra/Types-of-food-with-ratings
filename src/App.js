@@ -50,8 +50,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 style={{ color: "red" }}>Declious-foods </h1>
-      <p style={{ fontSize: "larger", color: "green" }}>
+      <h1 style={{ color: "red", textAlign: "center" }}>Declious-foods </h1>
+      <p style={{ fontSize: "larger", color: "green", textAlign: "center" }}>
         {" "}
         List of my favourite foods with rating{" "}
       </p>
